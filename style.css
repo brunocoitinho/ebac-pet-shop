@@ -1,0 +1,192 @@
+:root{
+    --header-bg: #226126;
+    --header-color: #ecf0f1;
+    --store-bg:#9bc09d;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-padding-top: 4rem;
+}
+
+h2, h3, header{
+    font-weight: normal;
+    font-family: 'Oswald', sans-serif;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    color: var(--header-bg);
+}
+
+#products h2, #quote-request h2{
+    margin-top: 10px ;
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px;
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header{
+    background-color: var(--header-bg);
+    color: var(--header-color);
+    position: fixed;
+    top:0;
+    left: 0;
+    width: 100%;
+}
+
+.brand{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+nav li, .brand h1{
+    margin-right: 8px;
+}
+
+
+.brand img{
+    height: 50px;
+    transform: rotate(-30deg);
+}
+
+nav li{
+    display: inline;
+}
+
+nav a{
+    color: var(--header-color);
+    text-decoration: none;
+}
+
+#store{
+    background-color: var(--store-bg);
+    color: var(--header-bg);
+    padding-top: 15vh;
+}
+
+#store img{
+    object-fit: cover;
+    max-height: 320px;
+    padding: 5px;
+}
+
+#store .container{
+    align-items: flex-start;
+}
+
+#store p, #store h3{
+    margin-top: 20px;
+}
+
+
+#store p {
+    width: 50%;
+    text-align: justify;
+}
+
+#store #quote-request{
+    margin-left: 8px;
+}
+
+#products{
+    background-color: var(--header-color);
+    color: var(--header-bg);
+    height: 70vh;
+
+    /*padding-top: 4%;*/
+}
+
+#products .container, #quote-request .container{
+    flex-direction: column;
+    align-items: start;
+}
+
+.card-container{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.card{
+    padding: 8px;
+    border-radius: 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.card img{
+    height: 200px;
+    border-radius: 2%;
+}
+
+.card:hover{
+    background-color: var(--store-bg);
+}
+
+.card a{
+    text-decoration: none;
+    background-color: var(--header-bg);
+    color: var(--header-color);
+    padding: 8px;
+    border-radius: 5%;
+}
+
+#quote-request{
+    background-color: var(--store-bg);
+    height: 70vh;
+}
+
+.form-container{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+form input, form button{
+    display: block;
+    width: 320px;
+    padding: 8px;
+}
+
+form input{
+    margin-bottom: 8px;
+}
+
+form button{
+    margin-top: 24px;
+    color: var(--header-color);
+    background-color: var(--header-bg);
+    border: none;
+}
+
+form button:hover{
+    background-color: #1c391e;
+    border: 1px inset;
+}
+
+footer{
+    height: 10vh;
+    background-color: var(--header-bg);
+    color: var(--header-color);
+}
+
+footer .container{
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
